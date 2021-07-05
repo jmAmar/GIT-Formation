@@ -2,11 +2,12 @@
 
 amigoscode.com
 
-supprimer tous les fichiers d'un répertoire en attente de commit :
+supprimer tous les fichiers d'un répertoire-dépôt en attente de commit :
 >> git rm -r --cached .
 
-ajouter un fichier à la file de commitage :
->> Learning-Git>git add .
+ajouter tous les fichiers du répertoire-dépôt à la file de commitage (stagged) :
+>> git add .
+>> git add -A (avec remontée d'un sous-répertoire au répertoire principal)
 
 vérifier le contenu du dossier-répertoire courant :
 >> git status
