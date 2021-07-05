@@ -1,0 +1,13 @@
+*** GIT & GITHUB ***
+
+amigoscode.com
+
+supprimer tous les fichiers d'un répertoire en attente de commit :
+>> git rm -r --cached .
+
+ajouter un fichier à la file de commitage :
+>> Learning-Git>git add .
+
+vérifier le contenu du dossier-répertoire courant :
+>> git status
+
