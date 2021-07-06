@@ -40,5 +40,28 @@ sauvegarder les fichier du repository local vers le repository GitHub :
 >> git push .
 
 
+rappatrier un fichier commited du repository GitHub dans le repository local :
+>> git pull
+(rappatrie tous les les fichiers modifiés dans GitHub et commited)
 
- 
+
+Une branch est une ligne indépendante de développement
+la branch par défaut ou principale est appelée main (master dans les versions antérieures)
+une branch annexe peut être intégrée (merged) dans la branche main
+
+identifier la branch sur laquelle on travaille en local :
+>> git branch
+identifier la branch sur laquelle on travaille sur GitHub :
+>> git branch -r  (remote)
+identifier toutes branch sur laquelle on travaille en local et sur GitHub :
+>> git branch -a  (all)
+
+créer une branch annexe :
+>> git branch annexe1
+
+Changer de branch de travail :
+>> git checkout annexe1
+
+revenir à la branch précédente (main par exemple) :
+>> git checkout -
+
