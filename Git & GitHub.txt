@@ -5,10 +5,40 @@ amigoscode.com
 supprimer tous les fichiers d'un répertoire-dépôt en attente de commit :
 >> git rm -r --cached .
 
-ajouter tous les fichiers du répertoire-dépôt à la file de commitage (stagged) :
+ajouter tous les fichiers du répertoire-dépôt à la file de commitage (staged) :
 >> git add .
 >> git add -A (avec remontée d'un sous-répertoire au répertoire principal)
 
 vérifier le contenu du dossier-répertoire courant :
 >> git status
 
+commiter un fichier :
+>> git commit -m "libellé" nomFichier
+(libellé : nomProjet, nomFichier, modificationsContenues, etc.)
+
+contrôler les modification d'un fichier commité :
+>> git log
+>> git show d7e1a4cd041c3db3b19eacd355c33953ff4c9b3e
+
+afficher les modifications d'un fichier avant staging et commiting :
+>> get diff
+
+supprimer les dernières modifications d'un fichier :
+>> git restore nomFichier
+
+modifier le libellé d'un fichier commited :
+>> git commit --amend -m "nouveauLibellé" nomFichier
+
+établir un lien entre le repository GitHub et le repository local :
+>> git remote add origin https://github.com/jmAmar/learning-Git.git
+>> git branch -M main
+
+initialiser la sauvegarde de fichiers commited sur le depository du serveur GitHub :
+>> git push -u origin main
+
+sauvegarder les fichier du repository local vers le repository GitHub :
+>> git push .
+
+
+
+ 
