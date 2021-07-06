@@ -59,9 +59,15 @@ identifier toutes branch sur laquelle on travaille en local et sur GitHub :
 créer une branch annexe :
 >> git branch annexe1
 
+créer une branche annexe et s'y positionner :
+>> git branch -b annexe2
+
 Changer de branch de travail :
 >> git checkout annexe1
 
 revenir à la branch précédente (main par exemple) :
 >> git checkout -
+
+supprimer une branch :
+>> git branch -d nomBranch
 
